@@ -5,6 +5,11 @@
     padding: 1.25rem 0;
     align-items: center;
     gap: 0.25rem;
+    width: 100%;
+
+}
+strong{
+    cursor: pointer;
 }
 .header img{
     height: 2rem;

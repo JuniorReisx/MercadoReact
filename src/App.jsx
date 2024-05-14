@@ -3,20 +3,11 @@ import {Post} from '../src/components/Post'
 import { Sidebar } from './components/sidebar'
 import './global.css'
 import styles from '../src/app.module.css'
-import { Avatar } from './components/avatar'
-
-const posts = [
-{
-   id: 1,
-   author:{
-     avatarUlr: 'https://images.pexels.com/photos/20755698/pexels-photo-20755698/free-photo-of-mar-praia-litoral-ferias.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-     name:'Ana Camila',
-     role:'CEO'
-   }  
-}
-  
-]
-
+import feijao from './assets/Feijao.webp'
+import arroz from './assets/arroz.jpeg'
+import macarrao from './assets/macarrao.jpeg'
+import miojo from './assets/miojo.jpeg'
+import { Footer } from './components/Footer'
 export function App() {
  
 
@@ -26,20 +17,23 @@ export function App() {
    <div className= {styles.wrapper}>
       <Sidebar/>
        <main>
-        
-        <Post
-        author='Junior Reis'
-        content='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi ab totam ipsa nemo esse itaque hic voluptatum, quasi facere obcaecati ut harum tempora reprehenderit odio dolores iste fuga quos nihil?'
-        />
-             <Post
-        author='Gil Maik'
-        content='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi ab totam ipsa nemo esse itaque hic voluptatum, quasi facere obcaecati ut harum tempora reprehenderit odio dolores iste fuga quos nihil?'
-        />
-        
+        <div className={styles.media}>
+
+       
+        <Post src={feijao}/>
+        <Post src={arroz}/>
+        <Post src={macarrao}/>
+        <Post src={miojo}/>
+        <Post src={miojo}/>
+        <Post src={miojo}/>
+        <Post src={miojo}/>
+        <Post src={miojo}/>
     
+       </div>
+        
        </main>
    </div>
-   
+   <Footer/>
   </div>
 
   )
