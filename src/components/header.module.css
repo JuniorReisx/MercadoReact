@@ -6,7 +6,8 @@
     align-items: center;
     gap: 0.25rem;
     width: 100%;
-
+  position: fixed;
+  top: 0;
 }
 strong{
     cursor: pointer;

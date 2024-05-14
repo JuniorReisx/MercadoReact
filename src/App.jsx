@@ -33,7 +33,7 @@ export function App() {
         
        </main>
    </div>
-   <Footer/>
+    <Footer/>
   </div>
 
   )
