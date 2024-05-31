@@ -7,7 +7,7 @@ export function Post({ src }) {
             <aside className={styles.sidebar}>
                 <img className={styles.cover} src={src} alt="Post cover" />
                 <div className={styles.profile}>
-                    <strong>Alimento</strong>
+                    <strong>Alimento: <em>$valor</em></strong>
                     <footer>
                         <a href="#">Compra</a>
                     </footer>
